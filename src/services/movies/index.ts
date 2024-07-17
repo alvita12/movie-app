@@ -1,0 +1,1 @@
+export { API, getNowPlaying } from './api'
