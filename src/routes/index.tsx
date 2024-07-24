@@ -1,6 +1,5 @@
 import Authentication from "../features/auth";
 import Detail from "../features/detail";
-import Home from "../features/home";
 import Layout from "../components/layout";
 import MovieDetail from "../components/movie-detail";
 import Movies from "../features/movies";
@@ -19,7 +18,7 @@ export const router = createBrowserRouter([
         children: [
           {
             index: true,
-            element: <Home />,
+            element: <Movies />,
           },
           {
             path: "/login",
@@ -28,10 +27,6 @@ export const router = createBrowserRouter([
           {
             path: "/detail",
             element: <Detail />,
-          },
-          {
-            path: "/movies",
-            element: <Movies />,
           },
           {
             path: "/movies/:id",
